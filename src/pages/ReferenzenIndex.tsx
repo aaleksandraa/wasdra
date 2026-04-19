@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import {
   ArrowUpRight,
   ChevronDown,
@@ -48,10 +48,37 @@ const FilterPill = ({ active, onClick, children }: FilterPillProps) => (
 );
 
 const ReferenzenIndex = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [serviceFilter, setServiceFilter] = useState<string | null>(null);
   const [typeFilter, setTypeFilter] = useState<ProjectType | null>(null);
   const [regionFilter, setRegionFilter] = useState<Region | null>(null);
   const [filtersOpen, setFiltersOpen] = useState(false);
+
+  useEffect(() => {
+    const regionParam = searchParams.get("region");
+
+    if (!regionParam) {
+      setRegionFilter(null);
+      return;
+    }
+
+    const matchedRegion = regions.find((region) => region === regionParam) ?? null;
+    setRegionFilter(matchedRegion);
+  }, [searchParams]);
+
+  useEffect(() => {
+    const nextParams = new URLSearchParams(searchParams);
+
+    if (regionFilter) {
+      nextParams.set("region", regionFilter);
+    } else {
+      nextParams.delete("region");
+    }
+
+    if (searchParams.toString() !== nextParams.toString()) {
+      setSearchParams(nextParams, { replace: true });
+    }
+  }, [regionFilter, searchParams, setSearchParams]);
 
   const filtered = useMemo(() => {
     return projects.filter((project) => {

@@ -9,7 +9,6 @@ const nav = [
   { label: "Leistungen", to: "/leistungen" },
   { label: "Referenzen", to: "/referenzen" },
   { label: "Über uns", to: "/ueber-uns" },
-  { label: "Regionen", to: "/#regionen" },
   { label: "FAQ", to: "/#faq" },
   { label: "Kontakt", to: contact.contactPath },
 ];
