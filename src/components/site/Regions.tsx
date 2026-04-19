@@ -8,9 +8,9 @@ export const Regions = () => {
     <section id="regionen" className="bg-surface-soft py-24 sm:py-28">
       <div className="container-wide">
         <SectionHeading
-          eyebrow="Regionen"
-          title="Unsere Referenzen nach Region entdecken."
-          description="Klicken Sie auf eine Region und sehen Sie direkt die Projekte, die wir dort umgesetzt haben."
+          eyebrow="Projekte nach Region"
+          title="Referenzen in Ihrer Region ansehen."
+          description="Wählen Sie eine Region und öffnen Sie direkt die passenden Projekte und Referenzen."
         />
 
         <ul className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
