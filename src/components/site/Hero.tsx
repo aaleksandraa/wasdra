@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import heroImg from "@/assets/hero-kitchen.jpg";
 
 const trust = [
@@ -48,10 +50,10 @@ export const Hero = () => {
 
           <div className="fade-in-up mt-10 flex flex-wrap items-center gap-4">
             <Button variant="accent" size="xl" asChild>
-              <a href="#kontakt">
+              <Link to={contact.quotePath}>
                 Projekt anfragen
                 <ArrowRight className="h-5 w-5" />
-              </a>
+              </Link>
             </Button>
             <Button variant="dark-outline" size="xl" asChild>
               <a href="#referenzen">Referenzen ansehen</a>

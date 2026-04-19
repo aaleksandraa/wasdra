@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import logo from "@/assets/logo-wasdra.png";
 
 const nav = [
@@ -10,6 +11,7 @@ const nav = [
   { label: "Über uns", to: "/ueber-uns" },
   { label: "Regionen", to: "/#regionen" },
   { label: "FAQ", to: "/#faq" },
+  { label: "Kontakt", to: contact.contactPath },
 ];
 
 export const Header = () => {
@@ -52,14 +54,14 @@ export const Header = () => {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="tel:+41000000000"
+            href={contact.phoneHref}
             className="flex items-center gap-2 text-sm font-medium text-primary-foreground/90 hover:text-accent"
           >
             <Phone className="h-4 w-4" />
-            <span>Anrufen</span>
+            <span>{contact.phoneDisplay}</span>
           </a>
           <Button variant="accent" size="default" asChild>
-            <Link to="/#kontakt">Offerte anfragen</Link>
+            <Link to={contact.quotePath}>Offerte anfragen</Link>
           </Button>
         </div>
 
@@ -88,13 +90,13 @@ export const Header = () => {
             ))}
             <div className="mt-3 flex flex-col gap-3 px-3 pb-2">
               <Button variant="accent" size="lg" asChild>
-                <Link to="/#kontakt" onClick={() => setOpen(false)}>
+                <Link to={contact.quotePath} onClick={() => setOpen(false)}>
                   Offerte anfragen
                 </Link>
               </Button>
               <Button variant="dark-outline" size="lg" asChild>
-                <a href="tel:+41000000000">
-                  <Phone className="h-4 w-4" /> Jetzt anrufen
+                <a href={contact.phoneHref}>
+                  <Phone className="h-4 w-4" /> {contact.phoneDisplay}
                 </a>
               </Button>
             </div>

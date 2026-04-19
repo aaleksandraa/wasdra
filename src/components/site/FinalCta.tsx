@@ -1,5 +1,7 @@
 import { ArrowRight, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 
 export const FinalCta = () => {
   return (
@@ -22,16 +24,36 @@ export const FinalCta = () => {
             Erzählen Sie uns von Ihrem Projekt. Sie erhalten innert 24 Stunden
             eine erste Rückmeldung – unverbindlich und kostenlos.
           </p>
+          <div className="mt-8 grid gap-3 text-sm text-primary-foreground/75 sm:grid-cols-3">
+            <a
+              href={contact.phoneHref}
+              className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 transition-colors hover:border-accent hover:text-accent"
+            >
+              {contact.phoneDisplay}
+            </a>
+            <a
+              href={contact.emailHref}
+              className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 transition-colors hover:border-accent hover:text-accent"
+            >
+              {contact.email}
+            </a>
+            <Link
+              to={contact.contactPath}
+              className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 transition-colors hover:border-accent hover:text-accent"
+            >
+              {contact.fullAddress}
+            </Link>
+          </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <Button variant="accent" size="xl" asChild>
-              <a href="#offerte">
+              <Link to={contact.quotePath}>
                 Offerte anfragen <ArrowRight className="h-5 w-5" />
-              </a>
+              </Link>
             </Button>
             <Button variant="dark-outline" size="xl" asChild>
-              <a href="tel:+41000000000">
-                <Phone className="h-5 w-5" /> Jetzt anrufen
+              <a href={contact.phoneHref}>
+                <Phone className="h-5 w-5" /> {contact.phoneDisplay}
               </a>
             </Button>
           </div>
@@ -63,13 +85,13 @@ export const FinalCta = () => {
             </div>
             <div className="grid gap-1.5">
               <label className="text-xs font-medium uppercase tracking-wider text-primary-foreground/70">
-                E-Mail oder Telefon
+                Ihre Kontaktdaten
               </label>
               <input
                 type="text"
                 required
                 className="h-11 rounded-md border border-white/10 bg-white/5 px-4 text-sm text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/40"
-                placeholder="max@beispiel.ch"
+                placeholder="Ihre Kontaktdaten"
               />
             </div>
             <div className="grid gap-1.5">

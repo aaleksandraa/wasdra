@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Seo } from "@/components/site/Seo";
 import { services } from "@/data/services";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import renovationImg from "@/assets/service-renovation.jpg";
 
 const LeistungenIndex = () => {
@@ -89,7 +90,7 @@ const LeistungenIndex = () => {
               erstellen eine transparente Offerte.
             </p>
             <Button variant="accent" size="lg" asChild>
-              <Link to="/#kontakt">Offerte anfragen</Link>
+              <Link to={contact.quotePath}>Offerte anfragen</Link>
             </Button>
           </div>
         </div>

@@ -16,6 +16,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { PageHero } from "@/components/site/PageHero";
 import { Seo } from "@/components/site/Seo";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import { getProjectBySlug, projects } from "@/data/projects";
 import { getServiceBySlug } from "@/data/services";
 
@@ -155,7 +156,7 @@ const ProjectDetail = () => {
 
             <div className="mt-8 flex flex-col gap-3">
               <Button variant="accent" size="lg" asChild>
-                <Link to="/#kontakt">Ähnliches Projekt anfragen</Link>
+                <Link to={contact.quotePath}>Ähnliches Projekt anfragen</Link>
               </Button>
             </div>
           </aside>

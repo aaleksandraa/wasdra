@@ -14,6 +14,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { PageHero } from "@/components/site/PageHero";
 import { Seo } from "@/components/site/Seo";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import { services } from "@/data/services";
 import renovationImg from "@/assets/service-renovation.jpg";
 import apartmentImg from "@/assets/project-apartment.jpg";
@@ -354,12 +355,12 @@ const UeberUns = () => {
               </div>
               <div className="flex flex-col gap-3">
                 <Button variant="accent" size="xl" asChild>
-                  <Link to="/#kontakt">
+                  <Link to={contact.quotePath}>
                     Jetzt Projekt anfragen <ArrowRight className="h-5 w-5" />
                   </Link>
                 </Button>
                 <Button variant="dark-outline" size="xl" asChild>
-                  <a href="tel:+41000000000">+41 00 000 00 00</a>
+                  <a href={contact.phoneHref}>{contact.phoneDisplay}</a>
                 </Button>
               </div>
             </div>

@@ -4,6 +4,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { PageHero } from "@/components/site/PageHero";
 import { Seo } from "@/components/site/Seo";
 import { Button } from "@/components/ui/button";
+import { contact } from "@/data/contact";
 import { getServiceBySlug, services } from "@/data/services";
 import { projects } from "@/data/projects";
 
@@ -81,11 +82,11 @@ const ServiceDetail = () => {
             </p>
             <div className="mt-6 flex flex-col gap-3">
               <Button variant="accent" size="lg" asChild>
-                <Link to="/#kontakt">Offerte anfragen</Link>
+                <Link to={contact.quotePath}>Offerte anfragen</Link>
               </Button>
               <Button variant="dark-outline" size="lg" asChild>
-                <a href="tel:+41000000000">
-                  <Phone className="h-4 w-4" /> Jetzt anrufen
+                <a href={contact.phoneHref}>
+                  <Phone className="h-4 w-4" /> {contact.phoneDisplay}
                 </a>
               </Button>
             </div>
