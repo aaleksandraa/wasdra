@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* WASDRA.CH Design System — premium Swiss construction
+   All colors HSL. Define new tokens here, never inline in components. */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 0 0% 100%;
+    --foreground: 220 15% 12%;
+
+    --surface-soft: 30 20% 97%;
+    --surface-muted: 30 12% 94%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    /* Brand: deep charcoal */
+    --primary: 220 18% 10%;
+    --primary-foreground: 30 25% 98%;
+
+    /* Accent: WASDRA orange */
+    --accent: 36 92% 54%;
+    --accent-foreground: 220 18% 10%;
+    --accent-soft: 36 92% 96%;
+
+    --secondary: 220 12% 96%;
+    --secondary-foreground: 220 18% 10%;
+
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 8% 42%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 36 92% 54%;
+
+    --radius: 0.625rem;
+
+    /* Brand-specific tokens */
+    --charcoal: 220 18% 10%;
+    --charcoal-soft: 220 14% 18%;
+    --orange: 36 92% 54%;
+    --orange-bright: 36 96% 60%;
+
+    /* Gradients */
+    --gradient-hero:
+      linear-gradient(135deg, hsl(220 22% 6% / 0.92), hsl(220 18% 10% / 0.78) 55%, hsl(36 92% 30% / 0.55));
+    --gradient-orange: linear-gradient(135deg, hsl(36 96% 60%), hsl(28 92% 50%));
+    --gradient-dark: linear-gradient(180deg, hsl(220 22% 8%), hsl(220 18% 12%));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px hsl(220 20% 10% / 0.04), 0 1px 3px hsl(220 20% 10% / 0.06);
+    --shadow-md: 0 8px 24px -6px hsl(220 20% 10% / 0.12);
+    --shadow-lg: 0 30px 60px -20px hsl(220 30% 10% / 0.25);
+    --shadow-orange: 0 14px 40px -10px hsl(36 92% 50% / 0.45);
+
+    /* Motion */
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-base: 300ms var(--ease-out);
+
+    /* Sidebar (kept for shadcn) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 15% 26%;
+    --sidebar-primary: 220 18% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 10% 96%;
+    --sidebar-accent-foreground: 220 18% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 36 92% 54%;
+  }
+
+  .dark {
+    --background: 220 22% 6%;
+    --foreground: 30 20% 96%;
+    --surface-soft: 220 18% 10%;
+    --surface-muted: 220 16% 14%;
+    --card: 220 18% 9%;
+    --card-foreground: 30 20% 96%;
+    --popover: 220 18% 9%;
+    --popover-foreground: 30 20% 96%;
+    --primary: 30 25% 98%;
+    --primary-foreground: 220 18% 10%;
+    --accent: 36 92% 56%;
+    --accent-foreground: 220 18% 10%;
+    --accent-soft: 36 60% 14%;
+    --secondary: 220 16% 14%;
+    --secondary-foreground: 30 20% 96%;
+    --muted: 220 14% 16%;
+    --muted-foreground: 220 10% 65%;
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 36 92% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Manrope', 'Inter', system-ui, sans-serif;
+    @apply tracking-tight;
+    letter-spacing: -0.02em;
+  }
+  ::selection {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
+}
+
+@layer utilities {
+  .container-tight {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .container-wide {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .bg-hero-gradient {
+    background-image: var(--gradient-hero);
+  }
+  .bg-dark-gradient {
+    background-image: var(--gradient-dark);
+  }
+  .bg-orange-gradient {
+    background-image: var(--gradient-orange);
+  }
+  .shadow-soft { box-shadow: var(--shadow-md); }
+  .shadow-elevated { box-shadow: var(--shadow-lg); }
+  .shadow-glow-orange { box-shadow: var(--shadow-orange); }
+  .accent-rule {
+    height: 2px;
+    width: 2.5rem;
+    background: hsl(var(--accent));
+    display: inline-block;
+  }
+  .fade-in-up {
+    animation: fadeInUp 0.7s var(--ease-out) both;
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translate3d(0, 16px, 0); }
+    to { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  .fade-in {
+    animation: fadeIn 0.6s var(--ease-out) both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
