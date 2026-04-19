@@ -13,17 +13,20 @@ const contactHighlights = [
     title: "Telefon",
     content: contact.phoneDisplay,
     href: contact.phoneHref,
+    contentClassName: "break-words",
   },
   {
     icon: Mail,
     title: "E-Mail",
     content: contact.email,
     href: contact.emailHref,
+    contentClassName: "break-all",
   },
   {
     icon: MapPin,
     title: "Adresse",
     content: contact.fullAddress,
+    contentClassName: "break-words",
   },
 ];
 
@@ -85,7 +88,7 @@ const Kontakt = () => {
             </p>
 
             <div className="mt-10 grid gap-4">
-              {contactHighlights.map(({ icon: Icon, title, content, href }) => (
+              {contactHighlights.map(({ icon: Icon, title, content, href, contentClassName }) => (
                 <div
                   key={title}
                   className="rounded-2xl border border-border bg-background p-5"
@@ -94,19 +97,19 @@ const Kontakt = () => {
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                       <Icon className="h-5 w-5" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         {title}
                       </div>
                       {href ? (
                         <a
                           href={href}
-                          className="mt-1 inline-block text-lg font-semibold text-foreground transition-colors hover:text-accent"
+                          className={`mt-1 inline-block max-w-full text-lg font-semibold text-foreground transition-colors hover:text-accent ${contentClassName}`}
                         >
                           {content}
                         </a>
                       ) : (
-                        <div className="mt-1 text-lg font-semibold text-foreground">
+                        <div className={`mt-1 max-w-full text-lg font-semibold text-foreground ${contentClassName}`}>
                           {content}
                         </div>
                       )}
@@ -145,12 +148,22 @@ const Kontakt = () => {
             </div>
 
             <div className="mt-8 flex flex-col gap-3">
-              <Button variant="accent" size="xl" asChild>
+              <Button
+                variant="accent"
+                size="xl"
+                className="h-auto w-full whitespace-normal px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap"
+                asChild
+              >
                 <a href={contact.phoneHref}>
                   {contact.phoneDisplay} <Phone className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="dark-outline" size="xl" asChild>
+              <Button
+                variant="dark-outline"
+                size="xl"
+                className="h-auto w-full whitespace-normal break-all px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap sm:break-normal"
+                asChild
+              >
                 <a href={contact.emailHref}>
                   {contact.email} <Mail className="h-5 w-5" />
                 </a>

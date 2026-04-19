@@ -7,8 +7,24 @@
     <meta name="description" content="WASDRA realisiert hochwertige Renovationen, Küchen nach Mass und Innenausbau für Wohnungen, EFH, MFH und Gewerbe in der Schweiz. Jetzt Offerte anfragen." />
     <meta name="author" content="WASDRA.CH" />
     <link rel="canonical" href="https://wasdra.ch/" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=20260419" />
+    <link rel="shortcut icon" href="/favicon.png?v=20260419" />
+    <link rel="apple-touch-icon" href="/favicon.png?v=20260419" />
+    <script>
+      (function (location) {
+        if (location.search[1] === "/") {
+          const decoded = location.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(null, "", decoded + location.hash);
+        }
+      })(window.location);
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
