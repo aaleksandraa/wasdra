@@ -73,9 +73,9 @@ const Kontakt = () => {
         crumbs={[{ label: "Start", to: "/" }, { label: "Kontakt" }]}
       />
 
-      <section className="bg-background py-20 sm:py-28">
+      <section className="overflow-x-hidden bg-background py-20 sm:py-28">
         <div className="container-wide grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-10">
+          <div className="overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-10">
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-accent">
               <span className="accent-rule" /> WASDRA.CH
             </div>
@@ -120,7 +120,7 @@ const Kontakt = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl bg-charcoal p-8 text-primary-foreground shadow-elevated sm:p-10">
+          <div className="overflow-hidden rounded-3xl bg-charcoal p-6 text-primary-foreground shadow-elevated sm:p-10">
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-accent">
               <span className="accent-rule" /> Schnell erreichbar
             </div>
@@ -151,21 +151,23 @@ const Kontakt = () => {
               <Button
                 variant="accent"
                 size="xl"
-                className="h-auto w-full whitespace-normal px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap"
+                className="h-auto w-full min-w-0 whitespace-normal px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap"
                 asChild
               >
                 <a href={contact.phoneHref}>
-                  {contact.phoneDisplay} <Phone className="h-5 w-5" />
+                  <span className="min-w-0">{contact.phoneDisplay}</span>
+                  <Phone className="h-5 w-5" />
                 </a>
               </Button>
               <Button
                 variant="dark-outline"
                 size="xl"
-                className="h-auto w-full whitespace-normal break-all px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap sm:break-normal"
+                className="h-auto w-full min-w-0 whitespace-normal break-all px-5 py-4 text-center sm:h-14 sm:px-9 sm:whitespace-nowrap sm:break-normal"
                 asChild
               >
                 <a href={contact.emailHref}>
-                  {contact.email} <Mail className="h-5 w-5" />
+                  <span className="min-w-0 break-all">{contact.email}</span>
+                  <Mail className="h-5 w-5" />
                 </a>
               </Button>
             </div>
@@ -181,7 +183,7 @@ const Kontakt = () => {
         </div>
       </section>
 
-      <section id="offerte" className="bg-surface-soft py-20 sm:py-28">
+      <section id="offerte" className="overflow-x-hidden bg-surface-soft py-20 sm:py-28">
         <div className="container-wide grid gap-8 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-accent">
@@ -197,7 +199,7 @@ const Kontakt = () => {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-10">
+          <div className="overflow-hidden rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-10">
             <ol className="grid gap-4">
               {steps.map((step, index) => (
                 <li

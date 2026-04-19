@@ -25,7 +25,7 @@ export const PageShell = ({ children }: { children: ReactNode }) => {
   }, [pathname, hash]);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
       <Header />
       <main>{children}</main>
       <Footer />
