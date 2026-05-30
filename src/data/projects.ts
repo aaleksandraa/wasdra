@@ -75,8 +75,8 @@ export const projects: Project[] = [
     shortDesc:
       "Kompletter Wohnungsumbau mit neuer Küche, neuem Bad, Einbaumöbeln, Vinyl im Wohnbereich und Keramik auf der Terrasse.",
     description: [
-      "Für Herrn Dalibor Kovacevic durften wir eine Eigentumswohnung in Oberweningen vollständig erneuern. Nach dem Rückbau von Böden, Küche und Bad wurden die Flächen vorbereitet, Wände geglättet und der gesamte Ausbau neu koordiniert.",
-      "Im Anschluss realisierten wir die neue Küche, ein modernes Bad mit Keramik und Möbeln, neue Einbaumöbel, frischen Abrieb an den Wänden sowie neue Beläge auf Terrasse und im Wohnbereich. Die komplette Ausführung erfolgte zwischen März und Mai 2024.",
+      "In Oberweningen wurde eine Eigentumswohnung umfassend modernisiert und auf einen zeitgemässen Wohnstandard gebracht. Nach dem Rückbau von Böden, Küche und Bad wurden die Flächen sorgfältig vorbereitet, die Wände geglättet und der gesamte Innenausbau effizient koordiniert.",
+      "Realisiert wurden eine neue Küche, ein modernes Bad mit Keramik und Möbeln, passgenaue Einbaumöbel, frischer Abrieb an den Wänden sowie neue Beläge auf Terrasse und im Wohnbereich. Die Ausführung erfolgte strukturiert zwischen März und Mai 2024.",
     ],
     highlights: [
       "Neue Küche geliefert und montiert",
@@ -107,8 +107,8 @@ export const projects: Project[] = [
     shortDesc:
       "Restaurantumbau mit neuen Trockenbauwänden, 300 m² Laminat, Podesten, Bareinrichtung und Beleuchtung.",
     description: [
-      "Für das Polaris beziehungsweise das serbische Kulturzentrum in Wil SG haben wir die Räumlichkeiten neu gegliedert und für den künftigen Gastronomie- und Veranstaltungsbetrieb vorbereitet.",
-      "Zum Auftrag gehörten Trockenbauwände zur Unterteilung der Flächen, rund 300 m² Laminatboden, neue Podeste, der Ausbau der Bar sowie die Montage der Beleuchtung. Der Umbau wurde von Mai bis Juli 2024 umgesetzt.",
+      "In Wil SG wurden bestehende Gewerbeflächen neu gegliedert und für einen modernen Gastronomie- und Veranstaltungsbetrieb vorbereitet. Der Umbau verbindet funktionale Raumaufteilung mit einer robusten, repräsentativen Ausführung für den täglichen Betrieb.",
+      "Zum Leistungsumfang gehörten Trockenbauwände zur Unterteilung der Flächen, rund 300 m² Laminatboden, neue Podeste, der Ausbau der Bar sowie die Montage der Beleuchtung. Der Umbau wurde von Mai bis Juli 2024 umgesetzt.",
     ],
     highlights: [
       "Trockenbau zur Zonierung der Räume",
@@ -120,18 +120,18 @@ export const projects: Project[] = [
   {
     slug: "sanierung-mfh-uzwil",
     title: "Sanierung MFH mit 3 Wohnungen in Uzwil",
-    cover: image("4/Aufbau Küche Eigentums Wohnung Fam. Mikich.jpg"),
+    cover: image("4/Aufbau Küche Eigentumswohnung Uzwil.jpg"),
     gallery: gallery("4", [
-      "Aufbau Küche Eigentums Wohnung Fam. Mikich.jpg",
+      "Aufbau Küche Eigentumswohnung Uzwil.jpg",
       "Mietwohnung Uzwil Aug. 24.jpg",
-      "Mikich Böden.jpg",
-      "Mikich Schuhkommode.jpg",
-      "Mikich, Einbauschrank.jpg",
-      "Einbauschrank Mikich Eigentumwohung.jpg",
-      "Mikich.jpg",
+      "Parkett Uzwil.jpg",
+      "Schuhkommode Einbaumöbel Uzwil.jpg",
+      "Einbauschrank Uzwil 1.jpg",
+      "Einbauschrank Eigentumswohnung Uzwil.jpg",
+      "Innenausbau Uzwil.jpg",
       "IMG-20230203-WA0021 (1).jpg",
       "IMG-20240828-WA0015.jpg",
-      "Umbau Wohnungen Mikich Uzwil .jpg",
+      "Umbau Wohnungen Uzwil.jpg",
     ]),
     location: "Uzwil, SG",
     region: "St. Gallen",
@@ -147,8 +147,8 @@ export const projects: Project[] = [
     shortDesc:
       "Sanierung eines Mehrfamilienhauses mit drei Wohnungen, neuen Küchen, neuen Bädern, Einbaumöbeln und Parkett.",
     description: [
-      "In Uzwil SG sanierten wir für Herrn Sascha Mikich drei Wohnungen innerhalb eines Mehrfamilienhauses. Nach dem Rückbau von Böden, Küchen und Bädern wurden die Wände vorbereitet und geglättet, damit der neue Ausbau sauber umgesetzt werden konnte.",
-      "Im Projektumfang enthalten waren drei neue Küchen, drei neue Bäder mit Keramik und Möbeln, neue Einbaumöbel sowie die Verlegung von Parkett. Die komplette Sanierung lief von Juli bis September 2024.",
+      "In Uzwil SG wurde ein Mehrfamilienhaus mit drei Wohnungen umfassend saniert und technisch sowie optisch aufgewertet. Nach dem Rückbau von Böden, Küchen und Bädern wurden die Wände vorbereitet und geglättet, damit der neue Ausbau sauber umgesetzt werden konnte.",
+      "Im Projektumfang enthalten waren drei neue Küchen, drei neue Bäder mit Keramik und Möbeln, neue Einbaumöbel sowie die Verlegung von Parkett. Die komplette Sanierung wurde von Juli bis September 2024 koordiniert und ausgeführt.",
     ],
     highlights: [
       "3 neue Küchen geliefert und montiert",
@@ -164,14 +164,14 @@ export const projects: Project[] = [
     gallery: gallery("2", [
       "Eigentumswohnung Zug Küche 2.jpg",
       "Eigentumswohnung Zug Bad 2.jpg",
-      "Cvetanovic Eingang Boden und Einbauschrank.jpg",
-      "Bad Cvetanovic.jpg",
-      "Umbau Whg. Cvetanovic Bar .jpg",
+      "Eingang Boden und Einbauschrank Baar.jpg",
+      "Bad Baar.jpg",
+      "Wohnung Baar Barbereich.jpg",
       "Waschmaschine Turm.jpg",
       "Verstärkung Lammelen Tragende Wand.jpg",
       "IMG-20250124-WA0010 (002).jpg",
       "IMG-20250124-WA0013.jpg",
-      "Abbruch Cvetanovic 1.jpg",
+      "Abbrucharbeiten Baar 1.jpg",
     ]),
     location: "Baar, ZG",
     region: "Zug",
@@ -187,8 +187,8 @@ export const projects: Project[] = [
     shortDesc:
       "Kompletter Wohnungsumbau mit neuer Küche, neuem Bad, neuen Böden, Einbauschränken und neuen Zimmertüren.",
     description: [
-      "Diese 70er-Jahre-Wohnung in Baar wurde für die Familie Cvetanovic von Grund auf modernisiert. Zuerst wurden Küche, Bad, Wände und Böden zurückgebaut und die Flächen mit Glättungsarbeiten, Kleberestentfernung und konstruktiven Verstärkungen vorbereitet.",
-      "Danach realisierten wir die neue Küche, das neue Bad, alle Bodenarbeiten, Einbauschränke und neue Zimmertüren. Die Ausführung erfolgte konzentriert innerhalb von Oktober und November 2024.",
+      "Diese 70er-Jahre-Wohnung in Baar wurde von Grund auf modernisiert und in eine helle, funktionale Wohneinheit mit klarer Materiallinie verwandelt. Zuerst wurden Küche, Bad, Wände und Böden zurückgebaut und die Flächen mit Glättungsarbeiten, Kleberestentfernung und konstruktiven Verstärkungen vorbereitet.",
+      "Danach realisierten wir die neue Küche, das neue Bad, sämtliche Bodenarbeiten, Einbauschränke und neue Zimmertüren. Die Ausführung erfolgte konzentriert und terminsicher innerhalb von Oktober und November 2024.",
     ],
     highlights: [
       "Neue Küche und neues Bad realisiert",
@@ -200,10 +200,10 @@ export const projects: Project[] = [
   {
     slug: "totale-renovation-eigentumswohnung-buelach",
     title: "Totale Renovation Eigentumswohnung in Bülach",
-    cover: image("8/Boden und Einbauschrank Dodos .jpg"),
+    cover: image("8/Boden und Einbauschrank Bülach.jpg"),
     gallery: gallery("8", [
-      "Boden und Einbauschrank Dodos .jpg",
-      "Bad Umbau Dodos Daniel.jpg",
+      "Boden und Einbauschrank Bülach.jpg",
+      "Bad Umbau Bülach.jpg",
       "FB_IMG_1682929001625 (1).jpg",
     ]),
     location: "Bülach, ZH",
@@ -220,7 +220,7 @@ export const projects: Project[] = [
     shortDesc:
       "Eigentumswohnung mit neuer Küche, neuem Bad, Einbaumöbeln und komplett erneuerten Oberflächen.",
     description: [
-      "Für Herrn Daniel Dodos modernisierten wir eine Eigentumswohnung in Bülach vollständig. Nach dem Rückbau von Böden, Küche und Bädern wurde der Innenausbau neu aufgebaut und auf eine klare, ruhige Materiallinie abgestimmt.",
+      "In Bülach wurde eine Eigentumswohnung vollständig modernisiert und mit einem ruhigen, hochwertigen Innenausbau neu inszeniert. Nach dem Rückbau von Böden, Küche und Bädern wurde der Ausbau auf eine klare Materiallinie und saubere Oberflächen abgestimmt.",
       "Zum Leistungsumfang gehörten die Lieferung und Montage der neuen Küche, ein neues Bad mit Keramik und Möbeln, neue Einbaumöbel sowie die Erneuerung der Oberflächen. Das Projekt wurde zwischen Januar und Februar 2024 umgesetzt.",
     ],
     highlights: [
@@ -253,8 +253,8 @@ export const projects: Project[] = [
     shortDesc:
       "Badumbau im Einfamilienhaus mit neuer Dusche, neuer Keramik und komplett erneuerter Sanitärzone.",
     description: [
-      "Im Einfamilienhaus von Herrn Mustafa Yilmaz in Herisau wurde das bestehende Bad vollständig zurückgebaut und neu aufgebaut. Ziel war eine saubere, zeitgemässe Lösung mit langlebigen Materialien.",
-      "Realisiert wurden ein neues Bad inklusive Keramikarbeiten und der komplette Aufbau der neuen Nasszelle. Die Ausführung erfolgte im April und Mai 2024.",
+      "In einem Einfamilienhaus in Herisau wurde das bestehende Bad vollständig zurückgebaut und als moderne Nasszelle neu aufgebaut. Ziel war eine pflegeleichte, zeitgemässe Lösung mit langlebigen Materialien und präziser Ausführung.",
+      "Realisiert wurden ein neues Bad inklusive Keramikarbeiten und der komplette Aufbau der neuen Sanitärzone. Die Ausführung erfolgte effizient im April und Mai 2024.",
     ],
     highlights: [
       "Altes Bad komplett rückgebaut",
@@ -282,7 +282,7 @@ export const projects: Project[] = [
     shortDesc:
       "Instandstellung eines Renditeobjekts mit neuer Treppenhauskeramik, Gemeinschaftsküche und totalsanierten Gemeinschaftsbädern.",
     description: [
-      "In Birmensdorf haben wir ein Renditeobjekt umfassend instand gestellt. Im Mittelpunkt standen die gemeinschaftlich genutzten Bereiche sowie die allgemeine Aufwertung des Bestands.",
+      "In Birmensdorf wurde ein Renditeobjekt umfassend instand gestellt und für eine nachhaltige Nutzung aufgewertet. Im Mittelpunkt standen die gemeinschaftlich genutzten Bereiche, eine robuste Materialisierung und die sichtbare Verbesserung des Bestands.",
       "Zum Auftrag gehörten neue Keramik und überarbeitete Wände im Treppenhaus, eine neue Küche im Gemeinschaftsraum, die Totalsanierung der Gemeinschaftsbäder inklusive Keramik sowie weitere allgemeine Instandstellungsarbeiten am Objekt. Die Ausführung lief von Dezember 2024 bis Februar 2025.",
     ],
     highlights: [
@@ -311,7 +311,7 @@ export const projects: Project[] = [
     shortDesc:
       "Umbau eines Kosmetikstudios mit abgehängter Decke, Spots, Keramikplatten, Tapeten und neuen Raumtrennern.",
     description: [
-      "Für Frau Nathalie Zehnhäuser sanierten und modernisierten wir die Räumlichkeiten eines Kosmetikstudios. Ziel war ein ruhiger, gepflegter Auftritt mit klaren Zonen für Kundinnen und Behandlungen.",
+      "Die Räumlichkeiten eines Kosmetikstudios wurden saniert und zu einem gepflegten, einladenden Arbeitsumfeld mit klar strukturierten Behandlungszonen weiterentwickelt. Der Fokus lag auf einem ruhigen Gesamtbild, funktionalen Abläufen und hochwertigen Oberflächen.",
       "Zum Auftrag gehörten der Rückbau alter Böden und Wände, das Herunterlassen der Decke, der Einbau von Spotlampen, Keramikplatten, Tapeten sowie Verglasungen und Raumtrenner. Das Projekt wurde im September 2024 abgeschlossen.",
     ],
     highlights: [
@@ -324,9 +324,9 @@ export const projects: Project[] = [
   {
     slug: "totale-renovation-eigentumswohnung-gockhausen",
     title: "Totale Renovation Eigentumswohnung Gockhausen",
-    cover: image("9/umbau Wohnung Szabo Küche und Boden 1.jpg"),
+    cover: image("9/Umbau Wohnung Gockhausen Küche und Boden.jpg"),
     gallery: gallery("9", [
-      "umbau Wohnung Szabo Küche und Boden 1.jpg",
+      "Umbau Wohnung Gockhausen Küche und Boden.jpg",
       "IMG-20220212-WA0007.jpg",
     ]),
     location: "Gockhausen, ZH",
@@ -343,7 +343,7 @@ export const projects: Project[] = [
     shortDesc:
       "Eigentumswohnung mit neuer Küche, neuem Bad, neuen Einbaumöbeln und komplett erneuerten Belägen.",
     description: [
-      "In Gockhausen realisierten wir für Herrn David Szabo die komplette Erneuerung einer Eigentumswohnung. Nach dem Rückbau von Böden, Küche und Bad wurde die Wohnung in kurzer Zeit neu aufgebaut.",
+      "In Gockhausen wurde eine Eigentumswohnung komplett erneuert und mit einem modernen, funktionalen Innenausbau ausgestattet. Nach dem Rückbau von Böden, Küche und Bad wurde die Wohnung in kurzer Zeit neu aufgebaut.",
       "Geliefert und montiert wurden die neue Küche, das neue Bad mit Keramik und Möbeln sowie neue Einbaumöbel. Die Totalsanierung wurde zwischen Dezember 2023 und Januar 2024 ausgeführt.",
     ],
     highlights: [
@@ -359,12 +359,12 @@ export const projects: Project[] = [
     cover: image("10/DSC00752.JPG"),
     gallery: gallery("10", [
       "DSC00752.JPG",
-      "Bad Familie Vasiljevic.jpg",
+      "Bad Wohnung Wil.jpg",
       "DSC00740.JPG",
       "DSC00745.JPG",
       "DSC00746.JPG",
-      "Umbau Wohnung Familie Vasiljevic, Wil SG .jpg",
-      "Umbau Whg. Vasiljevic Wil, Durchbruch Treppen .jpg",
+      "Umbau Wohnung Wil SG.jpg",
+      "Umbau Wohnung Wil Durchbruch Treppen.jpg",
     ]),
     location: "Wil, SG",
     region: "St. Gallen",
@@ -380,7 +380,7 @@ export const projects: Project[] = [
     shortDesc:
       "Zusammenführung von zwei Wohnungen zu einer Einheit mit Wand- und Deckendurchbrüchen, neuer Küche, Bad, Einbaumöbeln und Terrassenkeramik.",
     description: [
-      "Für die Familie Vasiljevic durften wir in Wil zwei bestehende Wohnungen zu einer grossen Einheit zusammenbauen. Dazu gehörten umfangreiche Rückbauarbeiten an Böden, Küche und Bädern sowie mehrere strukturelle Eingriffe.",
+      "In Wil wurden zwei bestehende Wohnungen zu einer grosszügigen Wohneinheit zusammengeführt. Dazu gehörten umfangreiche Rückbauarbeiten an Böden, Küche und Bädern sowie mehrere strukturelle Eingriffe für eine neue, offene Raumorganisation.",
       "Neu realisiert wurden eine Küche, ein Bad mit Keramik und Möbeln, neue Einbaumöbel, Wanddurchbrüche, der Abbruch eines Kamins, eine Deckenöffnung für eine Wendeltreppe sowie neue Keramik auf den Terrassen. Die Arbeiten liefen von September bis Dezember 2023.",
     ],
     highlights: [
