@@ -9,7 +9,6 @@ import {
   Clock,
   MapPin,
   Tag,
-  Wallet,
   X,
 } from "lucide-react";
 import { PageShell } from "@/components/site/PageShell";
@@ -108,15 +107,6 @@ const ProjectDetail = () => {
                     Objekttyp
                   </dt>
                   <dd className="mt-0.5 text-sm font-medium">{project.type}</dd>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <Wallet className="mt-0.5 h-5 w-5 text-accent" />
-                <div>
-                  <dt className="text-xs uppercase tracking-wider text-primary-foreground/50">
-                    Budgetrahmen
-                  </dt>
-                  <dd className="mt-0.5 text-sm font-medium">{project.budget}</dd>
                 </div>
               </div>
               <div className="flex items-start gap-3">

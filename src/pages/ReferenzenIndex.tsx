@@ -276,10 +276,7 @@ const ReferenzenIndex = () => {
                     <p className="text-sm leading-relaxed text-muted-foreground">
                       {project.shortDesc}
                     </p>
-                    <div className="mt-auto flex items-center justify-between border-t border-border pt-4">
-                      <span className="text-sm font-medium text-foreground">
-                        {project.budget}
-                      </span>
+                    <div className="mt-auto flex items-center justify-end border-t border-border pt-4">
                       <span className="inline-flex items-center gap-1 text-sm font-semibold text-foreground transition-colors group-hover:text-accent">
                         Ansehen <ArrowUpRight className="h-4 w-4" />
                       </span>
