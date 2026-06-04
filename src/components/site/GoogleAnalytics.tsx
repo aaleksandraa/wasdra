@@ -15,6 +15,10 @@ let isLoaded = false;
 
 const loadGoogleAnalytics = (measurementId: string) => {
   if (isLoaded || typeof window === "undefined") return;
+  if (typeof window.gtag === "function") {
+    isLoaded = true;
+    return;
+  }
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = (...args: unknown[]) => {
